@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uis.CartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="MY ORDER"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvCart"
+            android:layout_width="match_parent"
+            android:layout_weight="8"
+            android:layout_height="0dp"/>
+        <Button
+            android:text="Checkout"
+            android:id="@+id/btnCheckOut"
+            android:layout_weight="0.7"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/white"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+</FrameLayout>
